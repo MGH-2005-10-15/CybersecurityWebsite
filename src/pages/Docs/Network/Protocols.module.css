@@ -1,0 +1,137 @@
+
+.main {
+    @apply w-full h-full bg-transparent flex flex-col overflow-x-hidden overflow-y-auto scroll-smooth pt-12 lg:pt-0;
+}
+
+.content-header {
+    @apply w-full inline-flex flex-col p-6;
+    border-color: var(--border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.content-header h1 {
+    @apply text-2xl md:text-3xl font-bold mb-4;
+    color: var(--txt);
+}
+
+.meta-info {
+    @apply flex flex-wrap items-center gap-2 text-sm;
+    color: var(--txt-4);
+}
+
+.section {
+    @apply w-full px-6 py-3 bg-transparent scroll-mt-20;
+}
+
+.section h2 {
+    @apply text-2xl font-bold ;
+    color: var(--txt);
+}
+
+.section h3 {
+    @apply text-xl font-semibold mt-6;
+    color: var(--txt);
+}
+
+.section p {
+    @apply py-3 bg-transparent;
+    color: var(--txt-4);
+    line-height: 1.6;
+}
+
+.section ul {
+    @apply pl-6 py-3 bg-transparent;
+    color: var(--txt-4);
+    line-height: 1.6;
+}
+
+.section li {
+    @apply mb-2 bg-transparent;
+}
+
+.section li strong {
+    color: var(--txt-2);
+}
+
+.code-block {
+    @apply w-full my-3 rounded-lg overflow-hidden;
+    background-color: var(--glass);
+    border: 1px solid var(--glass-border);
+}
+
+.code-header {
+    @apply flex justify-between items-center px-4 py-2 border-b;
+    border-color: var(--glass-border);
+}
+
+.code-header span {
+    @apply text-sm font-medium;
+    color: var(--txt-4);
+}
+
+.copy-button {
+    @apply inline-flex justify-center items-center text-center p-1 rounded text-sm font-medium transition-colors;
+    background-color: var(--glass);
+    color: var(--txt-4);
+    border: 1px solid var(--glass-border);
+}
+
+.copy-button:hover {
+    background-color: var(--bg-2);
+}
+
+.code-block pre {
+    @apply p-4 overflow-x-auto;
+}
+
+.code-block code {
+    @apply text-sm;
+    color: var(--txt);
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.content-footer {
+    @apply border-t;
+    border-color: var(--border);
+}
+
+.feedback-section {
+    @apply flex flex-col text-center w-full bg-transparent p-8;
+}
+
+.feedback-section h3 {
+    @apply text-lg font-medium py-3;
+    color: var(--txt);
+}
+
+.feedback-buttons {
+    @apply w-full h-10 bg-transparent flex justify-center gap-4;
+}
+
+.feedback-buttons button {
+    @apply inline-flex justify-center items-center text-center px-2 gap-2 rounded-lg font-medium transition-colors;
+    background-color: var(--glass);
+    color: var(--txt-2);
+    border: 1px solid var(--glass-border);
+}
+
+.feedback-buttons button:hover {
+    background-color: var(--bg-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

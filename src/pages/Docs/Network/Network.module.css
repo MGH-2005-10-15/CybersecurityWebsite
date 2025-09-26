@@ -1,0 +1,82 @@
+
+.main {
+    @apply w-full h-full block pt-16;
+    background-color: var(--bg);
+}
+
+.container {
+    @apply w-full h-full overflow-x-hidden overflow-y-auto scroll-smooth flex flex-col lg:flex-row;
+    border-top: 1px solid var(--glass-border);
+}
+
+.mobile-menu {
+    @apply w-full bg-transparent fixed z-40 top-16 left-0 inline-flex justify-start flex-col;
+    border-top: 2px solid var(--glass);
+    border-bottom: 1px solid var(--glass);
+    background-color: var(--bg);
+}
+
+.mobile-menu-top {
+    @apply w-full h-12 bg-transparent inline-flex justify-start items-center;
+}
+
+.mobile-menu-arrow-btn {
+    @apply h-full inline-flex justify-evenly gap-3 px-3 items-center text-center bg-transparent;
+}
+
+.arrow {
+    @apply text-center text-base font-normal bg-transparent;
+    color: var(--txt);
+}
+
+.mobile-menu-title {
+    @apply text-center text-base font-medium bg-transparent;
+    color: var(--txt);
+}
+
+
+.articles-list-open {
+    @apply w-full h-full overflow-x-hidden overflow-y-auto inline-flex flex-col bg-transparent;
+}
+
+.articles-list-open button {
+    @apply w-full h-10 bg-transparent;
+}
+
+.articles-list-close {
+    @apply w-full h-0 hidden;
+}
+
+@screen lg {
+    .mobile-menu, .mobile-menu-top ,.mobile-menu-arrow-btn, .mobile-menu-title, .articles-list-open, .articles-list-close {
+        display: none;
+    }
+}
+
+.menu, .menu-top {
+    display: none;
+}
+
+@screen lg {
+    
+    .menu {
+        @apply w-1/4 h-full p-4 flex flex-col overflow-x-hidden overflow-y-auto scroll-smooth;
+        border-right: 1px solid var(--glass-border);
+    }
+
+    .menu-top {
+        @apply w-full h-12 text-lg font-semibold bg-transparent inline-flex justify-center items-center text-center;
+        color: var(--txt);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

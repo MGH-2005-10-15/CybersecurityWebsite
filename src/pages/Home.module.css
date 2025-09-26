@@ -1,0 +1,40 @@
+
+.main {
+    @apply w-full h-full block pt-16;
+    background-color: var(--bg);
+}
+
+.container {
+    @apply w-full h-full overflow-x-hidden overflow-y-auto;
+}
+
+.top {
+    @apply w-full min-h-60 flex flex-col md:flex-row items-center justify-between py-12 px-4 md:px-8 bg-transparent;
+}
+
+.top-content {
+    @apply w-full md:w-1/2 h-auto bg-transparent flex flex-col items-center md:items-start text-center md:text-left mb-10 md:mb-0;
+}
+
+.title {
+    @apply text-4xl md:text-6xl font-bold mb-6 leading-tight;
+    color: var(--txt);
+}
+
+.title span {
+    @apply bg-clip-text text-transparent uppercase;
+    color: var(--txt-3);
+    text-shadow: 0 0 5px var(--shadow);
+}
+
+.subtitle {
+    @apply text-lg md:text-xl mb-8 max-w-lg;
+    color: var(--txt-4);
+}
+
+
+
+
+
+
+
